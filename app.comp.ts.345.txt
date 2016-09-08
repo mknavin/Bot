@@ -1,0 +1,23 @@
+{
+  "output": {
+    "text": {
+      "values": [
+        "So long :)",
+        "See ya",
+        "Bye bye",
+        "Happy trails",
+        "OK, I said good bye already",
+        "Really? We're doing this?"
+      ],
+      "selection_policy": "sequential"
+    }
+  }
+}
+
+
+C:\Gradle\gradle-2.11-bin\gradle-2.11\bin\gradle build
+
+/webhook
+
+            //  responseText = data1.output.text.length >= 1 && !data1.output.text[0] ? data1.output.text.join(' ').trim() : data1.output.text[0]; 
+            // tslint:disable-line max-line-length

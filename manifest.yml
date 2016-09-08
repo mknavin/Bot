@@ -1,0 +1,24 @@
+---
+declared-services:
+  retrieve-and-rank-service:
+    label: retrieve_and_rank
+    plan: standard
+  document-conversion-service:
+    label: document_conversion
+    plan: standard
+  conversation-service:
+    label: conversation
+    plan: free
+  dashDB-vm:
+    label: dashDB
+    plan: Entry
+applications:
+- services:
+  - retrieve-and-rank-service
+  - document-conversion-service
+  - conversation-service
+  - dashDB-vm
+  path: build/libs/conversation-enhanced-0.1-SNAPSHOT.war
+  memory: 512M
+  name: bank-bot-dkalyani-1133
+  host: bank-bot-dkalyani-1133
