@@ -3,10 +3,11 @@
  the app connects to a DashDB instance to retrive data pertaining to transactions
  nosqljson.jar,db2jcc_license_cu.jar, db2jcc4.jar need to be present in /locallib dir.
  Instances of below services need to be created in the space where the will be deployed and the corresponding name should be updated in the manifest.yml file
-  -retrieve-and-rank-service
+  
   - document-conversion-service
   - conversation-service
   - dashDB
+  - retrieve-and-rank-service
 
 #To build the application you need to be in the root dir of this app and do
 gradle.bat build
