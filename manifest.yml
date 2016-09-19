@@ -14,8 +14,6 @@ declared-services:
     plan: Entry
 applications:
 - services:
-  - retrieve-and-rank-service
-  - document-conversion-service
   - conversation-service
   - dashDB-vm
   path: build/libs/conversation-enhanced-0.1-SNAPSHOT.war
