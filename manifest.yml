@@ -18,5 +18,5 @@ applications:
   - dashDB-vm
   path: build/libs/conversation-enhanced-0.1-SNAPSHOT.war
   memory: 512M
-  name: bank-bot-dkalyani-1133
-  host: bank-bot-dkalyani-1133
+  name: bank-bot-ckp
+  host: bank-bot-ckp
