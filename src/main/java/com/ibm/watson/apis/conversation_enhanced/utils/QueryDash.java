@@ -17,7 +17,7 @@ public class QueryDash {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		QueryDash qd = new QueryDash() ;
-		qd.fetchData("*","Transactions","TransType='ATM'",123,2) ;
+		qd.fetchData("*","TRANSACTION","TRANSTYPE='ATM'",123,2) ;
 	}
 	private Connection getConnection()
 	{
@@ -51,7 +51,7 @@ public ResultSet fetchData(String selParams,String table,String where,int custId
 	String sqlStatement = "";
 	try {
 		stmt = con.createStatement();
-		sqlStatement = "SELECT "+selParams+" FROM "+table+ " where +\"CustomerId\"="+custId+" and "+where+" FETCH FIRST "+ noOfRows + " ROWS ONLY" ;
+		sqlStatement = "SELECT "+selParams+" FROM "+table+ " where +\"CUSTOMERID\"="+custId+" and "+where+" FETCH FIRST "+ noOfRows + " ROWS ONLY" ;
 		rs = stmt.executeQuery(sqlStatement);
 		
 	} catch (SQLException e) {
