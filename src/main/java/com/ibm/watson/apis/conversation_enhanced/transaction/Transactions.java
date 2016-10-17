@@ -16,7 +16,7 @@ public class Transactions {
 	  public List<TransactionPayload> getTransactions(int noTrans, String RTT,String cusId) throws Exception {			
 		  int customerId = Integer.parseInt(cusId) ;
 		  QueryDash qd = new QueryDash() ;
-		  ResultSet rs = qd.fetchData("\"Date\",\"Desc\",\"Amount\"","\"Transactions\"","\"TransType\"="+"'"+RTT+"'",customerId,noTrans) ;
+		  ResultSet rs = qd.fetchData("\"DATE\",\"DESC\",\"AMOUNT\"","\"TRANSACTION\"","\"TRANSTYPE\"="+"'"+RTT+"'",customerId,noTrans) ;
 		  List<TransactionPayload> docs = null ;
 		  if (rs!=null)
 			{
